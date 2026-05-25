@@ -1,0 +1,207 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+body{
+  background:#184b5a;
+  color:#264458;
+}
+
+/* HERO */
+
+/* --- EDIT DI BAGIAN HERO INI --- */
+.hero {
+    height: 100vh;
+    
+    /* Menggunakan linear-gradient (gelap transparan) agar teks putih di atasnya tetap jelas dibaca */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('assets/merapi.jpeg'); /* <-- Ganti nama file di sini sesuai nama fotomu */
+                
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; /* Efek tambahan: background terkunci saat di-scroll (keren banget!) */
+    color: white;
+}
+
+/* NAVBAR */
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background:rgba(255, 255, 255, 0.3);
+}
+
+.logo{
+  font-size:30px;
+}
+
+.menu a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  transition:0.3s;
+}
+
+.menu a:hover{
+  color:rgb(34, 73, 179);
+}
+
+/* HERO TEXT */
+
+.hero-text{
+  text-align:center;
+  margin-top:180px;
+}
+
+.hero-text h1{
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.hero-text p{
+  font-size:20px;
+  margin-bottom:30px;
+}
+
+.btn{
+  background:#e2cff1;
+  color:white;
+  padding:15px 30px;
+  border-radius:10px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:rgb(206, 195, 228);
+}
+
+/* CARD */
+
+.card{
+  width:85%;
+  margin:50px auto;
+  background:rgb(192, 237, 255);
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+/* PROFIL */
+
+.profil-text{
+  text-align:center;
+  line-height:1.8;
+  font-size:18px;
+}
+
+/* EVENT */
+
+.event-box{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.box{
+  flex:1;
+  min-width:200px;
+  background:#90bed3;
+  padding:30px;
+  border-radius:15px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.box:hover{
+  transform:translateY(-10px);
+  background:#326591;
+}
+
+.box i{
+  font-size:50px;
+  color:rgb(64, 87, 83);
+  margin-bottom:20px;
+}
+
+/* GALERI */
+
+.galeri-box{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.galeri-box img{
+  width:300px;
+  height:220px;
+  object-fit:cover;
+  border-radius:15px;
+  transition:0.3s;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.galeri-box img:hover{
+  transform:scale(1.05);
+}
+
+/* DOWNLOAD */
+
+.download-box{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.download-btn{
+  background:green;
+  color:white;
+  text-decoration:none;
+  padding:15px 25px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.download-btn:hover{
+  background:darkgreen;
+}
+
+/* FOOTER */
+
+footer{
+  background:#184074;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:50px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+  }
+
+  .menu{
+    margin-top:15px;
+  }
+
+  .hero-text h1{
+    font-size:40px;
+  }
+
+}
